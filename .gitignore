@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+*.json.tmp
+watch_output.txt

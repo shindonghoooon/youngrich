@@ -1,0 +1,10 @@
+date,ticker,name,case,grade,price,currency,peg_3y,note
+2026-08-29,STRL,Sterling Infrastructure,01-lynch,A,470.52,USD,0.6,초기판정
+2026-08-29,TTMI,TTM Technologies,01-lynch,A,118.65,USD,0.49,초기판정
+2026-08-29,083650,비에이치아이,01-lynch,A,65400.0,KRW,0.34,초기판정
+2026-08-29,047050,포스코인터내셔널,01-lynch,A,52700.0,KRW,0.34,초기판정
+2026-08-29,098460,고영,01-lynch,B,28700.0,KRW,0.42,초기판정
+2026-08-29,ORCL,Oracle,01-lynch,B,150.85,USD,0.79,초기판정
+2026-08-29,PWR,Quanta Services,01-lynch,X,602.7,USD,1.33,초기판정
+2026-08-29,FORM,FormFactor,01-lynch,X,101.695,USD,16.53,초기판정
+2026-08-29,126340,비나텍,01-lynch,X,63600.0,KRW,,초기판정

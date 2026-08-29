@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-29",
+  "note": "등급·추적항목은 cases/ 의 로직으로 산출. 가격은 판정 시점 종가.",
+  "stocks": [
+    {
+      "ticker": "STRL",
+      "name": "Sterling Infrastructure",
+      "market": "US",
+      "case": "01-lynch",
+      "grade": "A",
+      "classification": "고성장주",
+      "judged_at": "2026-08-29",
+      "metrics": {
+        "peg_3y": 0.6,
+        "price_at_judgment": 470.52,
+        "currency": "USD",
+        "low_52w": 266.13,
+        "high_52w": 1005.68
+      },
+      "story": "데이터센터 캐펙스가 유지되는 한 부지조성+전기공사 통합입찰로 수주를 독식. 전기공 인력 부족이 진입장벽.",
+      "kill_reasons": [],
+      "tracking": [
+        {
+          "item": "book-to-burn",
+          "source": "분기실적",
+          "promote": "1.2배 이상",
+          "demote": "1.0배 미만"
+        },
+        {
+          "item": "E-Infra 조정 영업이익률",
+          "source": "분기실적",
+          "promote": "22% 이상",
+          "demote": "18% 미만"
+        },
+        {
+          "item": "하이퍼스케일러 캐펙스 가이던스",
+          "source": "MSFT·GOOGL·AMZN 실적",
+          "promote": "유지·상향",
+          "demote": "하향"
+        }
+      ]
+    },
+    {
+      "ticker": "TTMI",
+      "name": "TTM Technologies",
+      "market": "US",
+      "case": "01-lynch",
+      "grade": "A",
+      "classification": "고성장주",
+      "judged_at": "2026-08-29",
+      "metrics": {
+        "peg_3y": 0.49,
+        "price_at_judgment": 118.65,
+        "currency": "USD",
+        "low_52w": 42.69,
+        "high_52w": 223.83
+      },
+      "story": "AI 데이터센터용 고다층 PCB 수요로 매출 급증. Epiq 인수로 RF/마이크로웨이브 확장.",
+      "kill_reasons": [],
+      "tracking": [
+        {
+          "item": "매출채권 증가율",
+          "source": "분기보고서",
+          "promote": "매출 증가율 이내",
+          "demote": "+10%p 초과"
+        },
+        {
+          "item": "순차입/EBITDA",
+          "source": "8-K·분기실적",
+          "promote": "2배 이하",
+          "demote": "3배 초과"
+        },
+        {
+          "item": "AI향 매출 비중",
+          "source": "실적발표",
+          "promote": "확대",
+          "demote": "정체"
+        }
+      ]
+    },
+    {
+      "ticker": "083650",
+      "name": "비에이치아이",
+      "market": "KR",
+      "case": "01-lynch",
+      "grade": "A",
+      "classification": "고성장주",
+      "judged_at": "2026-08-29",
+      "metrics": {
+        "peg_3y": 0.34,
+        "price_at_judgment": 65400.0,
+        "currency": "KRW",
+        "low_52w": 33150.0,
+        "high_52w": 114200.0
+      },
+      "story": "가스복합화력 수요로 HRSG 수주 급증. 사우디·필리핀·일본 동시 수주로 3~4년치 매출 확보. 매출 3배 되며 마진도 2배.",
+      "kill_reasons": [],
+      "tracking": [
+        {
+          "item": "분기 신규수주",
+          "source": "DART·IR",
+          "promote": "3,000억 이상",
+          "demote": "2,000억 미만 2분기 연속"
+        },
+        {
+          "item": "HRSG 매출 성장률",
+          "source": "분기보고서",
+          "promote": "+40% 이상",
+          "demote": "+20% 미만"
+        },
+        {
+          "item": "환율 파생손실",
+          "source": "분기보고서",
+          "promote": "축소",
+          "demote": "순이익률 5% 하회 지속"
+        }
+      ]
+    },
+    {
+      "ticker": "047050",
+      "name": "포스코인터내셔널",
+      "market": "KR",
+      "case": "01-lynch",
+      "grade": "A",
+      "classification": "자산주",
+      "judged_at": "2026-08-29",
+      "metrics": {
+        "peg_3y": 0.34,
+        "price_at_judgment": 52700.0,
+        "currency": "KRW",
+        "low_52w": 44850.0,
+        "high_52w": 91200.0
+      },
+      "story": "가스전(OPM 17.3%)과 인니팜(OPM 32.8%) 기반 사상 최대 실적이 PER 10배에 방치. SENEX 풀생산과 광양 제2터미널이 2027 증익 축.",
+      "kill_reasons": [],
+      "tracking": [
+        {
+          "item": "SENEX 생산량",
+          "source": "분기실적·IR",
+          "promote": "2027 풀생산 도달",
+          "demote": "지연"
+        },
+        {
+          "item": "광양 제2 LNG터미널 준공",
+          "source": "DART 공시",
+          "promote": "연내 준공",
+          "demote": "지연"
+        },
+        {
+          "item": "미얀마 가스전 계약 상태",
+          "source": "DART 자원개발공시",
+          "promote": "유지",
+          "demote": "변경·제재"
+        }
+      ]
+    },
+    {
+      "ticker": "098460",
+      "name": "고영",
+      "market": "KR",
+      "case": "01-lynch",
+      "grade": "B",
+      "classification": "고성장주",
+      "judged_at": "2026-08-29",
+      "metrics": {
+        "peg_3y": 0.42,
+        "price_at_judgment": 28700.0,
+        "currency": "KRW",
+        "low_52w": 13800.0,
+        "high_52w": 45000.0
+      },
+      "story": "뇌수술용 의료로봇 병원 수요 증가. 미국·일본 설치 확대 시 리레이팅.",
+      "kill_reasons": [],
+      "tracking": [
+        {
+          "item": "뇌수술 의료로봇 설치 대수",
+          "source": "실적발표·IR",
+          "promote": "미국·일본 연 10대 이상",
+          "demote": "5대 미만"
+        },
+        {
+          "item": "2026F EPS 달성",
+          "source": "분기실적",
+          "promote": "915원 이상",
+          "demote": "하향 조정"
+        },
+        {
+          "item": "의료로봇 매출 비중",
+          "source": "분기보고서",
+          "promote": "확대",
+          "demote": "정체"
+        }
+      ]
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle",
+      "market": "US",
+      "case": "01-lynch",
+      "grade": "B",
+      "classification": "대형우량주",
+      "judged_at": "2026-08-29",
+      "metrics": {
+        "peg_3y": 0.79,
+        "price_at_judgment": 150.85,
+        "currency": "USD",
+        "low_52w": 114.5,
+        "high_52w": 345.72
+      },
+      "story": "클라우드·AI 인프라 수요로 RPO 급증. 단 RPO 중 상당액이 OpenAI 단일 집중.",
+      "kill_reasons": [],
+      "tracking": [
+        {
+          "item": "RPO 고객 집중도",
+          "source": "10-Q·실적발표",
+          "promote": "OpenAI 비중 축소",
+          "demote": "확대"
+        },
+        {
+          "item": "클라우드 매출 성장률",
+          "source": "분기실적",
+          "promote": "+25% 이상",
+          "demote": "+15% 미만"
+        },
+        {
+          "item": "증권집단소송 진행",
+          "source": "8-K·법원기록",
+          "promote": "기각",
+          "demote": "실질 손해 확정"
+        }
+      ]
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services",
+      "market": "US",
+      "case": "01-lynch",
+      "grade": "X",
+      "classification": "고성장주",
+      "judged_at": "2026-08-29",
+      "metrics": {
+        "peg_3y": 1.33,
+        "price_at_judgment": 602.7,
+        "currency": "USD",
+        "low_52w": 363.01,
+        "high_52w": 788.75
+      },
+      "story": "전력 인프라 수요는 견조하나 운전자본이 매출의 2배 속도로 증가.",
+      "kill_reasons": [
+        "재고 +42.4% vs 매출 +20.3%",
+        "매출채권 +32.4% vs 매출 +20.3%",
+        "PEG 1.33"
+      ],
+      "tracking": [
+        {
+          "item": "재고 증가율",
+          "source": "10-Q",
+          "promote": "매출 증가율 이내 정상화",
+          "demote": "추가 확대"
+        },
+        {
+          "item": "매출채권 회전일수",
+          "source": "10-Q",
+          "promote": "단축",
+          "demote": "연장"
+        }
+      ]
+    },
+    {
+      "ticker": "FORM",
+      "name": "FormFactor",
+      "market": "US",
+      "case": "01-lynch",
+      "grade": "X",
+      "classification": "고성장주",
+      "judged_at": "2026-08-29",
+      "metrics": {
+        "peg_3y": 16.53,
+        "price_at_judgment": 101.695,
+        "currency": "USD",
+        "low_52w": 27.81,
+        "high_52w": 160.27
+      },
+      "story": "반도체 테스트 수요 기대는 있으나 EPS가 4년간 제자리.",
+      "kill_reasons": [
+        "3년 EPS CAGR 2.0% (0.65→0.69)",
+        "PEG 16.53",
+        "매출채권 +20.3% vs 매출 +2.8%"
+      ],
+      "tracking": [
+        {
+          "item": "3년 EPS CAGR",
+          "source": "10-K",
+          "promote": "10% 이상 회복",
+          "demote": "추가 하락"
+        },
+        {
+          "item": "매출 성장률",
+          "source": "분기실적",
+          "promote": "+10% 이상",
+          "demote": "한 자릿수 지속"
+        }
+      ]
+    },
+    {
+      "ticker": "126340",
+      "name": "비나텍",
+      "market": "KR",
+      "case": "01-lynch",
+      "grade": "X",
+      "classification": "초기성장",
+      "judged_at": "2026-08-29",
+      "metrics": {
+        "peg_3y": null,
+        "price_at_judgment": 63600.0,
+        "currency": "KRW",
+        "low_52w": 40776.7,
+        "high_52w": 204500.0
+      },
+      "story": "AI 데이터센터·스마트 전력망 수요로 슈퍼커패시터 매출 급증. 단 베트남 화재 여파로 연결 마진 악화.",
+      "kill_reasons": [
+        "연결 GM 27.3%→22.5% 악화",
+        "연결 영업적자 지속",
+        "부채비율 194.7%"
+      ],
+      "tracking": [
+        {
+          "item": "연결 매출총이익률",
+          "source": "분기보고서 연결",
+          "promote": "27% 회복",
+          "demote": "20% 하회"
+        },
+        {
+          "item": "베트남 법인 정상화",
+          "source": "DART 공시",
+          "promote": "완전 재가동",
+          "demote": "추가 지연"
+        },
+        {
+          "item": "연결 영업이익",
+          "source": "분기보고서 연결",
+          "promote": "흑자 전환",
+          "demote": "적자 확대"
+        }
+      ]
+    }
+  ]
+}
