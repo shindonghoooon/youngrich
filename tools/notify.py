@@ -8,6 +8,9 @@
   TELEGRAM_CHAT_ID    받을 채팅 ID
 
 표준입력으로 받은 텍스트를 전송한다. '변화 없음'이면 전송하지 않는다.
+
+  python tools/notify.py                 → 제목 "📊 종목 감시" (기본)
+  python tools/notify.py "✅ 판정 반영"   → 제목 지정
 """
 import os, sys, json, urllib.request, urllib.parse
 
@@ -45,5 +48,6 @@ if __name__ == "__main__":
     if not body or "변화 없음" in body:
         print("변화 없음 — 전송 생략")
         sys.exit(0)
-    msg = "<b>📊 종목 감시</b>\n<pre>" + body.replace("&", "&amp;").replace("<", "&lt;") + "</pre>"
+    title = sys.argv[1] if len(sys.argv) > 1 else "📊 종목 감시"
+    msg = f"<b>{title}</b>\n<pre>" + body.replace("&", "&amp;").replace("<", "&lt;") + "</pre>"
     print("전송 완료" if send(msg) else "전송 실패")
