@@ -23,6 +23,17 @@ jobs:
           TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
         run: cat watch_output.txt | python tools/notify.py
 
+      - name: 대시보드 생성
+        run: python tools/build.py
+
+      - name: 대시보드 커밋
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html
+          git diff --staged --quiet || git commit -m "chore: 대시보드 갱신 $(date +%F)"
+          git push
+
       - name: 이슈 생성 (변화 있을 때만)
         uses: actions/github-script@v7
         with:

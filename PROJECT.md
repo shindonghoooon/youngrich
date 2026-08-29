@@ -201,6 +201,36 @@ LS ELECTRIC · 제룡산업 · 제룡전기 · 보성파워텍 · 우진 · 세�
 
 ---
 
+## 원페이지 리포트 (판정과 별개)
+
+`reports/` — 종목별 사업 현황 요약. 절차와 형식은 `reports/README.md`.
+
+| | 원페이지 리포트 | 케이스 판정 |
+|---|---|---|
+| 답하는 것 | 이 회사가 뭘 하는가 | 사야 하는가 |
+| 근거 | 웹 검색 + 공시 | 케이스 로직 |
+| 위치 | `reports/*.md` | `data/watchlist.json` |
+
+**둘을 섞지 않는다.** 리포트는 사실 정리, 판정은 로직 적용이다.
+
+---
+
+## 상황별 최소 첨부
+
+리포: `github.com/shindonghoooon/youngrich`
+
+| 하려는 것 | 읽을 파일 |
+|---|---|
+| 추적 확인 | `data/watchlist.json` |
+| 원페이지 리포트 | `reports/README.md` |
+| 새 종목 판정 | `PROJECT.md` + `cases/0N-*.md` |
+| 새 케이스 착수 | `PROJECT.md` |
+| 로직 개정 | `cases/0N-*.md` |
+
+판정 결과의 정본은 `watchlist.json`. 케이스 문서에는 로직만 둔다.
+
+---
+
 ## 새 대화 시작 시
 
 1. 이 문서 + 해당 케이스 문서를 첨부
