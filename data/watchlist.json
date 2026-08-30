@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-08-29",
+ "updated_at": "2026-08-30",
  "note": "감시 대상(A·B·C)만. 기각(D·X)은 rejected.json, 케이스 미확정은 queue.json.",
  "stocks": [
   {
@@ -228,6 +228,68 @@
      "source": "8-K·법원기록",
      "promote": "기각",
      "demote": "실질 손해 확정"
+    }
+   ]
+  },
+  {
+   "ticker": "010130",
+   "name": "고려아연",
+   "market": "KR",
+   "case": "02-cyclical",
+   "grade": "C",
+   "classification": "경기순환주",
+   "story": "백분위 30으로 사이클 하단. 다만 재고/매출 27.2→37.5% 2년 연속 증가로 ④가 하강을 가리킴.",
+   "kill_reasons": [],
+   "judged_at": "2026-08-30",
+   "tracking": [
+    {
+     "item": "OPM 10년 백분위",
+     "source": "분기 실적 TTM",
+     "promote": "40 이하 2회",
+     "demote": "80 이상 2회"
+    },
+    {
+     "item": "재고/매출",
+     "source": "분기 재무상태표",
+     "promote": "3분기 연속 감소",
+     "demote": "3분기 연속 증가"
+    },
+    {
+     "item": "아연 TC/RC",
+     "source": "업계 지표",
+     "promote": "상승 전환",
+     "demote": "추가 하락"
+    }
+   ]
+  },
+  {
+   "ticker": null,
+   "name": "와이지-원",
+   "market": "KR",
+   "case": "02-cyclical",
+   "grade": "C",
+   "classification": "경기순환주",
+   "story": "백분위 60 중간. 최저 OPM -4.2% 재현 시 영업적자, 순현금 아님. 재고/매출 69.3%로 12년 최고 고착.",
+   "kill_reasons": [],
+   "judged_at": "2026-08-30",
+   "tracking": [
+    {
+     "item": "OPM 10년 백분위",
+     "source": "분기 실적 TTM",
+     "promote": "40 이하 2회",
+     "demote": "80 이상 2회"
+    },
+    {
+     "item": "재고/매출",
+     "source": "분기 재무상태표",
+     "promote": "3분기 연속 감소",
+     "demote": "3분기 연속 증가"
+    },
+    {
+     "item": "이자보상배율",
+     "source": "분기 손익계산서",
+     "promote": "산출 후 1 초과 확인",
+     "demote": "1 미만"
     }
    ]
   }

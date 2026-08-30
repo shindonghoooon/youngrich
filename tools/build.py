@@ -18,15 +18,23 @@ CASES = {
 GRADE_ORDER = {"A": 0, "B": 1, "C": 2, "D": 3, "X": 4}
 
 
+KOSPI = ("047050", "010120", "000660", "010130", "439260")
+
+
 def ysym(st):
-    t = st["ticker"]
-    if st["market"] != "KR":
+    t = st.get("ticker")
+    if not t:                       # 종목코드 미확인 건은 시세 조회를 건너뛴다
+        return None
+    if st.get("market") != "KR":
         return t
-    return t + (".KS" if t in ("047050", "010120", "000660", "010130") else ".KQ")
+    return t + (".KS" if t in KOSPI else ".KQ")
 
 
 def quote(st):
-    u = f"https://query1.finance.yahoo.com/v8/finance/chart/{ysym(st)}?range=1y&interval=1d"
+    sym = ysym(st)
+    if not sym:
+        return None
+    u = f"https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=1y&interval=1d"
     try:
         d = json.load(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=20))
         r = d["chart"]["result"][0]
@@ -68,11 +76,11 @@ def card(st, q):
         return f'<div class="card g{g}"><div class="hd"><span class="badge b{g}">{g}</span>' \
                f'<b>{e(st["name"])}</b></div><div class="err">시세 조회 실패</div></div>'
     p, cur = q["p"], q["cur"]
-    j = st["metrics"].get("price_at_judgment")
+    j = (st.get("metrics") or {}).get("price_at_judgment")
     chg = (p / j - 1) * 100 if j else None
     pos = (p - q["lo52"]) / ((q["hi52"] - q["lo52"]) or 1) * 100
     dist = (p / q["inval"] - 1) * 100
-    peg = st["metrics"].get("peg_3y")
+    peg = (st.get("metrics") or {}).get("peg_3y")
 
     warn = ""
     if dist < 0:
@@ -94,14 +102,17 @@ def card(st, q):
             f"<li>{e(k)}</li>" for k in st["kill_reasons"]) + "</ul></div>"
 
     chg_cls = "up" if (chg or 0) >= 0 else "dn"
+    chg_txt = f"{chg:+.1f}%" if isinstance(chg, (int, float)) else "—"
+    pos = pos if isinstance(pos, (int, float)) else 0.0
+    dist = dist if isinstance(dist, (int, float)) else 0.0
     return f"""<div class="card g{g}">
   <div class="hd"><span class="badge b{g}">{g}</span>
-    <div><b>{e(st['name'])}</b><span class="tk">{e(st['ticker'])} · {e(st['classification'])}</span></div>
+    <div><b>{e(st['name'])}</b><span class="tk">{e(st.get('ticker') or '—')} · {e(st.get('classification') or '')}</span></div>
     {spark(q['spark'])}
   </div>
   <div class="px">
     <div class="now">{fmt(p,cur)}<span class="cur">{cur}</span></div>
-    <div class="sub">판정가 {fmt(j,cur)} <span class="{chg_cls}">{chg:+.1f}%</span></div>
+    <div class="sub">판정가 {fmt(j,cur)} <span class="{chg_cls}">{chg_txt}</span></div>
   </div>
   <div class="bars">
     <div class="lbl">52주 위치 <b>{pos:.0f}%</b></div>

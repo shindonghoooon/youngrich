@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-08-29",
+ "updated_at": "2026-08-30",
  "note": "해당 케이스 로직이 확정되기 전까지 판정하지 않는다. 케이스 확정 시 일괄 실행.",
  "stocks": [
   {
@@ -12,61 +12,12 @@
    "note": "종목코드 미확인"
   },
   {
-   "ticker": "000660",
-   "name": "SK하이닉스",
-   "market": "KR",
-   "case": "02-cyclical",
-   "queued_at": "2026-08-29"
-  },
-  {
-   "ticker": "010130",
-   "name": "고려아연",
-   "market": "KR",
-   "case": "02-cyclical",
-   "queued_at": "2026-08-29"
-  },
-  {
-   "ticker": "ONDS",
-   "name": "Ondas",
-   "market": "US",
-   "case": "03-bg",
-   "queued_at": "2026-08-29"
-  },
-  {
-   "ticker": "LPTH",
-   "name": "LightPath",
-   "market": "US",
-   "case": "03-bg",
-   "queued_at": "2026-08-29"
-  },
-  {
    "ticker": "UUUU",
    "name": "Energy Fuels",
    "market": "US",
-   "case": "03-bg",
-   "queued_at": "2026-08-29"
-  },
-  {
-   "ticker": "ASPI",
-   "name": "ASP Isotopes",
-   "market": "US",
-   "case": "03-bg",
-   "queued_at": "2026-08-29"
-  },
-  {
-   "ticker": "OPTT",
-   "name": "Ocean Power",
-   "market": "US",
-   "case": "03-bg",
-   "queued_at": "2026-08-29"
-  },
-  {
-   "ticker": null,
-   "name": "오르비텍",
-   "market": "KR",
-   "case": "03-bg",
+   "case": null,
    "queued_at": "2026-08-29",
-   "note": "종목코드 미확인"
+   "note": "케이스2·3 모두 부적합: 전 기간 영업적자로 마진 백분위 적용 불가. 가격 사이클형 자원주 별도 취급 필요"
   },
   {
    "ticker": "EROC",
@@ -143,7 +94,31 @@
    "market": "KR",
    "case": "02-cyclical",
    "queued_at": "2026-08-29",
-   "note": "케이스 2 확정 대기"
+   "note": "케이스2 판정 보류: 요약재무정보 3개년뿐(2023~2025). 이력 7년 미만"
+  },
+  {
+   "ticker": "ONDS",
+   "name": "Ondas",
+   "market": "US",
+   "case": "03-bg",
+   "queued_at": "2026-08-30",
+   "note": "정량 통과 · N1~N3 내러티브 대기. 킬①②통과(런웨이 18.9분기·GM 39.7%). 주당GP 기저 미형성 → 등급 상한 B. 증분마진 -55%"
+  },
+  {
+   "ticker": "ASPI",
+   "name": "ASP Isotopes",
+   "market": "US",
+   "case": "03-bg",
+   "queued_at": "2026-08-30",
+   "note": "정량 통과 · N1~N3 내러티브 대기. 킬①②통과(런웨이 9.9분기·GM 14.3%). 주당GP +37.4%, 증분마진 -170%"
+  },
+  {
+   "ticker": "LPTH",
+   "name": "LightPath",
+   "market": "US",
+   "case": "03-bg",
+   "queued_at": "2026-08-30",
+   "note": "정량 통과 · N1~N3 내러티브 대기. 킬①②통과(런웨이 24.0분기·GM 27.2%). 주당GP +7.3% 하위구간"
   }
  ]
 }

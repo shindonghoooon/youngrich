@@ -1,6 +1,6 @@
 {
  "schema_version": 1,
- "updated_at": "2026-08-29",
+ "updated_at": "2026-08-30",
  "note": "기각 기록. 감시하지 않는다. 분기 1회 '기각 후 +50% 이상' 만 역검토한다.",
  "stocks": [
   {
@@ -114,6 +114,72 @@
      "source": "분기보고서 연결",
      "promote": "흑자 전환",
      "demote": "적자 확대"
+    }
+   ]
+  },
+  {
+   "ticker": "OPTT",
+   "name": "Ocean Power",
+   "market": "US",
+   "case": "03-bg",
+   "grade": "X",
+   "story": "3중 킬",
+   "kill_reasons": [
+    "킬①·② 동시: 런웨이 1.4분기, 매출 감소, GP 음전(GM -158%)"
+   ],
+   "rejected_at": "2026-08-30",
+   "recheck": [
+    {
+     "item": "증분마진(TTM)",
+     "source": "분기실적",
+     "promote": "2회 연속 플러스 → 재판정",
+     "demote": "-"
+    }
+   ]
+  },
+  {
+   "ticker": null,
+   "name": "오르비텍",
+   "market": "KR",
+   "case": "03-bg",
+   "grade": "X",
+   "story": "영업적자 -45억 vs 순이익 +140억, 대상 판별 자체 애매",
+   "kill_reasons": [
+    "킬① 생존 실패: 반기 CFO -135억, 현금 71억 → 런웨이 1.1분기"
+   ],
+   "rejected_at": "2026-08-30",
+   "recheck": [
+    {
+     "item": "증분마진(TTM)",
+     "source": "분기실적",
+     "promote": "2회 연속 플러스 → 재판정",
+     "demote": "-"
+    }
+   ]
+  },
+  {
+   "ticker": "000660",
+   "name": "SK하이닉스",
+   "market": "KR",
+   "case": "02-cyclical",
+   "grade": "X",
+   "story": "OPM 48.6% = 12년 밴드 90퍼센타일. 저점 궤적 미달로 구조전환 아닌 순환주로 확정.",
+   "kill_reasons": [
+    "킬① 고점 매수: 마진 백분위 90 (기준 80)"
+   ],
+   "rejected_at": "2026-08-30",
+   "recheck": [
+    {
+     "item": "OPM 10년 백분위",
+     "source": "분기 실적 TTM",
+     "promote": "40 이하 2회 연속",
+     "demote": "-"
+    },
+    {
+     "item": "저점 궤적(구조전환)",
+     "source": "다음 다운사이클 저점 영업이익",
+     "promote": "2025 고점 초과 시 케이스1 재배정",
+     "demote": "-"
     }
    ]
   }
